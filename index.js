@@ -3,10 +3,10 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
-app.set('views', __dirname + '/views'); 
-app.set('view engine', 'pug');
+//app.set('views', __dirname + '/views'); 
+//app.set('view engine', 'pug');
 
 app.get('/', function(request, response) {
   response.render('index', { title: 'Hey', message: 'Hello there!'});
